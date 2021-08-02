@@ -2,6 +2,8 @@ package com.dio.controledeponto.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Data
@@ -9,10 +11,10 @@ import javax.persistence.OneToMany;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
+@Entity
 public class NivelAcesso {
 
+    @Id
     private Long id;
-    @OneToMany
-    private NivelAcesso nivelAcesso;
     private String descricao;
 }

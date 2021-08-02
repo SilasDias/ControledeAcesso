@@ -10,6 +10,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
+@Entity
 public class CategoriaUsuario {
 
     @Id

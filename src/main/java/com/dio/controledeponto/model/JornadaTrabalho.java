@@ -2,6 +2,7 @@ package com.dio.controledeponto.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Data
@@ -9,6 +10,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
+@Entity
 public class JornadaTrabalho {
 
     @Id
