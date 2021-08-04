@@ -32,4 +32,12 @@ public class JornadaService {
         Optional<JornadaTrabalho> optionalJornada = jornadaRepository.findById(id);
         return optionalJornada.get();
     }
+
+    public JornadaTrabalho updateById(Long id, JornadaTrabalho jornadaTrabalho) {
+        return jornadaRepository.save(jornadaTrabalho);
+    }
+
+    public void deleteJornada(Long id){
+        jornadaRepository.deleteById(id);
+    }
 }
